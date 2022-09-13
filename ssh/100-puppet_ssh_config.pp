@@ -1,6 +1,8 @@
 # changes to configuration file
-file  { '/etc/ssh/ssh_config':
-    PasswordAuthentication => 'no',
-    IdentifyFile => '~/.ssh/school',
-  }
+class sshdconfig {
+	file  { "/etc/ssh/ssh_config":
+		notify => Service["sshd"],
+       		PasswordAuthentication => "no",
+   	        IdentifyFile => "~/.ssh/school",
+ 	 }
 }
