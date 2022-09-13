@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# my config file ssh
+
+
+IdentifyFile ~/.ssh/school
+
+PasswordAuthentication no
+
+
