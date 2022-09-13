@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
-# connects through ssh with username ubuntu and domain as ip seen
-ssh ubuntu@52.91.59.143
+# connects through ssh with username ubuntu and domain as ip see
+eval $(ssh-agent)
+ssh-add
+ssh -A ubuntu@52.91.59.143
