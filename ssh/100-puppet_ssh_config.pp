@@ -1,5 +1,8 @@
-#!/usr/bin/env bash
 # changes to configuration file
-
-IdentifyFile ~/.ssh/school
-PasswordAuthentication no
+::ssh::client::config::user { 'ubuntu':
+  ensure => present,
+  options => {
+    'PasswordAuthentication' => 'no'
+    'IdentifyFile' => '~/.ssh/school'
+  }
+}
