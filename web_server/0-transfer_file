@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
-
-# transfering file through ssh tunneling
+#transfering file through ssh tunneling
 scp -o StrictHostKeyChecking=no -i $4   `$3`@`$2`:`$1` ~/
