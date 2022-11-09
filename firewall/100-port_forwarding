@@ -1,4 +1,5 @@
-# script config file
+#script config file
+#nat
 *nat
 :PREROUTING ACCPEPT [0:0]
 # FORWARD
