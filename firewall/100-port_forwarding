@@ -1,7 +1,7 @@
 #script config file
 #nat
 *nat
-:PREROUTING ACCPEPT [0:0]
+:PREROUTING ACCEPT [0:0]
 # FORWARD
 -A PREROUTING -p tcp --dport 8080 -j REDIRECT --to-port 80
 COMMIT
