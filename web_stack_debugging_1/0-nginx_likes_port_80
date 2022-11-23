@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# swapping port 8080 with 80
 cd /etc/nginx/sites-enabled
 sed -i -g 'g/8080/80'  default
 service nginx start
